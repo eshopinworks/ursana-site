@@ -36,20 +36,15 @@ export function Reviews() {
           {REVIEWS.map((r) => (
             <figure
               key={r.name}
-              className="relative bg-surface rounded-xl p-7 overflow-hidden hover:shadow-[0_12px_32px_-12px_rgba(43,43,43,0.12)] hover:-translate-y-0.5 transition-all duration-500 group"
+              className="relative bg-card border border-border p-7 overflow-hidden hover:border-[#221C1A]/40 transition-all duration-300 group"
             >
               {/* Left gold accent */}
-              <div className="absolute left-0 top-7 bottom-7 w-[3px] bg-gold/70 rounded-r-full group-hover:bg-gold transition-colors duration-500" />
+              <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[var(--gold)]/60 group-hover:bg-[var(--gold)] transition-colors duration-300" />
 
-              {/* Decorative quote mark */}
-              <span className="absolute top-3 right-5 font-serif text-5xl text-gold/10 leading-none select-none pointer-events-none">
-                &ldquo;
-              </span>
-
-              <div className="pl-5 relative">
+              <div className="pl-4 relative">
                 {/* Avatar + name */}
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-background border border-border/60 flex items-center justify-center font-serif text-sm font-medium text-gold shrink-0">
+                  <div className="w-8 h-8 bg-surface border border-border flex items-center justify-center font-serif text-xs font-medium text-[var(--gold)] shrink-0">
                     {r.name.charAt(0)}
                   </div>
                   <div className="min-w-0">
@@ -60,7 +55,7 @@ export function Reviews() {
                       href={BOOKING_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] text-muted-foreground tracking-wider uppercase mt-0.5 hover:text-gold transition-colors"
+                      className="text-[10px] text-muted-foreground tracking-wider uppercase mt-0.5 hover:text-[var(--gold)] transition-colors block"
                     >
                       Patvirtintas atsiliepimas
                     </a>
@@ -73,7 +68,7 @@ export function Reviews() {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="mt-3 text-sm leading-[1.7] text-foreground/80">
+                <blockquote className="mt-3 text-sm leading-relaxed text-foreground/80">
                   {r.text}
                 </blockquote>
               </div>
@@ -86,7 +81,7 @@ export function Reviews() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-gold text-gold hover:bg-gold hover:text-[#1a1a1a] px-8 py-3 text-sm font-medium tracking-wide transition-all duration-300"
+            className="inline-flex items-center justify-center rounded-none border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
           >
             Skaityti visus atsiliepimus
           </a>

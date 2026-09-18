@@ -16,7 +16,7 @@ export function Services() {
         </div>
 
         <div className="mx-auto w-full sm:max-w-6xl px-4 sm:px-8">
-          <div className="rounded-2xl overflow-hidden shadow-[0_8px_40px_-20px_rgba(43,43,43,0.18)] border border-border/50 bg-card">
+          <div className="overflow-hidden border border-border bg-card">
             <iframe
               src={iframeSrc}
               title="Rezervacija per Treatwell"

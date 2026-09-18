@@ -41,19 +41,19 @@ export function Featured() {
           {CARDS.map((c) => (
             <div
               key={c.title}
-              className="group bg-card rounded-2xl p-7 shadow-[0_4px_30px_-12px_rgba(43,43,43,0.12)] hover:shadow-[0_20px_50px_-20px_rgba(194,168,120,0.4)] hover:-translate-y-1 transition-all duration-500 border border-border/50 flex flex-col"
+              className="group bg-card p-8 sm:p-9 border border-border hover:border-[#221C1A]/40 transition-all duration-300 flex flex-col"
             >
-              <div className="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6 group-hover:bg-[var(--gold)]/30 transition-colors">
-                <c.icon size={22} className="text-[var(--gold)]" />
+              <div className="w-10 h-10 border border-[var(--gold)]/40 flex items-center justify-center mb-6 group-hover:border-[var(--gold)] transition-colors">
+                <c.icon size={18} className="text-[var(--gold)]" />
               </div>
               <h3 className="font-serif text-2xl mb-3 text-foreground">{c.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-7 flex-1">{c.text}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">{c.text}</p>
               {c.externalUrl ? (
                 <a
                   href={c.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-medium tracking-wide border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 self-start"
+                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-none text-xs font-medium uppercase tracking-[0.15em] border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 self-start"
                 >
                   {c.buttonText}
                   <ExternalLink size={13} />

@@ -11,15 +11,15 @@ type Props = {
 
 export function BookButton({ children = "Rezervuoti vizitą", variant = "primary", size = "md", className, href = "#paslaugos" }: Props) {
   const base =
-    "inline-flex items-center justify-center rounded-full font-medium tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background";
-  const sizes = { md: "px-6 py-2.5 text-sm", lg: "px-8 py-3.5 text-base" };
+    "inline-flex items-center justify-center rounded-none font-medium uppercase tracking-[0.15em] text-xs transition-all duration-300 focus:outline-none";
+  const sizes = { md: "px-6 py-3.5", lg: "px-8 py-4 text-sm" };
   const variants = {
     primary:
-      "bg-[var(--gold)] text-white hover:bg-[oklch(0.48_0.1_75)] hover:shadow-lg hover:shadow-[var(--gold)]/30 hover:-translate-y-0.5",
+      "bg-[#221C1A] text-white hover:bg-[var(--gold)] border border-[#221C1A] hover:border-[var(--gold)]",
     outline:
-      "border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white",
+      "border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white",
     ghost:
-      "border border-white/70 text-white hover:bg-white hover:text-[#2b2b2b] backdrop-blur-sm",
+      "border border-white/60 text-white hover:bg-white hover:text-[#221C1A]",
   };
   const isHash = href.startsWith("#");
   return (

@@ -14,7 +14,7 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-          <div className="bg-card rounded-2xl p-8 sm:p-10 border border-border/50 shadow-[0_8px_40px_-20px_rgba(43,43,43,0.15)] flex flex-col">
+          <div className="bg-card p-8 sm:p-10 border border-border flex flex-col">
             <ul className="space-y-7 flex-1">
               <li className="flex gap-4">
                 <MapPin size={20} className="text-[var(--gold)] mt-1 shrink-0" />
@@ -60,27 +60,27 @@ export function Contact() {
                 </div>
               </li>
             </ul>
-            <div className="mt-10 pt-6 border-t border-border/60 flex flex-col sm:flex-row flex-wrap gap-3">
+            <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row flex-wrap gap-3">
               <BookButton size="lg" className="w-full sm:w-auto">Rezervuoti vizitą</BookButton>
               <a
                 href={BOOKITNOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)]/10 hover:border-[var(--gold)] transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-none text-xs uppercase tracking-[0.15em] font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)] hover:text-white transition-all duration-300"
               >
                 BookitNow registracija
               </a>
               <a
                 href="tel:+37065030443"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium border border-border text-foreground hover:border-[var(--gold)] transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-none text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
               >
-                <PhoneCall size={16} className="text-[var(--gold)]" />
+                <PhoneCall size={14} className="text-[var(--gold)]" />
                 Skambinti
               </a>
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-[0_8px_40px_-20px_rgba(43,43,43,0.2)] border border-border/50 min-h-[420px]">
+          <div className="overflow-hidden border border-border min-h-[420px] bg-card">
             <iframe
               title="Ursana studijos vieta žemėlapyje"
               src="https://www.google.com/maps?q=54.69094,25.27580&z=16&output=embed"
