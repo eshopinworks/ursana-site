@@ -1,7 +1,6 @@
 import { Star, ArrowRight, MapPin } from "lucide-react";
 import { BookButton } from "./BookButton";
-import { FALLBACK_IMAGES } from "@/lib/site-data";
-import heroAsset from "@/assets/hero-studio-light.jpg.asset.json";
+import heroImage from "@/assets/hero-studio-light.jpg";
 
 export function Hero() {
   return (
@@ -91,12 +90,10 @@ export function Hero() {
           {/* main image */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-[0_30px_80px_-30px_rgba(43,43,43,0.4)]">
             <img
-              src={heroAsset.url}
-              onError={(e) =>
-                ((e.currentTarget as HTMLImageElement).src = FALLBACK_IMAGES[0])
-              }
+              src={heroImage}
               alt="Ursana grožio studijos interjeras"
               className="w-full h-full object-cover"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
           </div>
