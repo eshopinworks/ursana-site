@@ -1,7 +1,8 @@
 export const BOOKING_URL = "https://www.treatwell.lt/salonas/grozio-studija-ursana/";
+export const BOOKITNOW_URL = "https://www.bookitnow.lt/ursana";
 export const ELEKTROEPILIACIJA_URL = "https://plaukeliusalinimas.lt/";
 export const INSTAGRAM_URL = "https://www.instagram.com/";
-export const FACEBOOK_URL = "https://www.facebook.com/";
+export const FACEBOOK_URL = "https://www.facebook.com/elektroepiliacija.depiliacija/";
 
 export const GALLERY_IMAGES = [
   "https://cdn1.treatwell.net/images/view/v2.i17384929.w720.h480.xD58E39A9/", // Clean studio styling stations & mirrors

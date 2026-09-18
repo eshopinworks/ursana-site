@@ -1,6 +1,7 @@
 import { MapPin, Phone, Clock, Languages, PhoneCall, Mail } from "lucide-react";
 import { BookButton } from "./BookButton";
 import { useFadeIn } from "@/hooks/use-fade-in";
+import { BOOKITNOW_URL } from "@/lib/site-data";
 
 export function Contact() {
   const fade = useFadeIn<HTMLDivElement>();
@@ -59,11 +60,19 @@ export function Contact() {
                 </div>
               </li>
             </ul>
-            <div className="mt-10 pt-6 border-t border-border/60 flex flex-col sm:flex-row gap-3">
+            <div className="mt-10 pt-6 border-t border-border/60 flex flex-col sm:flex-row flex-wrap gap-3">
               <BookButton size="lg" className="w-full sm:w-auto">Rezervuoti vizitą</BookButton>
               <a
-                href="tel:+37065030443"
+                href={BOOKITNOW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)]/10 hover:border-[var(--gold)] transition-colors"
+              >
+                BookitNow registracija
+              </a>
+              <a
+                href="tel:+37065030443"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium border border-border text-foreground hover:border-[var(--gold)] transition-colors"
               >
                 <PhoneCall size={16} className="text-[var(--gold)]" />
                 Skambinti

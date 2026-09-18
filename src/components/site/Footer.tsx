@@ -1,4 +1,4 @@
-import { BOOKING_URL, ELEKTROEPILIACIJA_URL, INSTAGRAM_URL, FACEBOOK_URL } from "@/lib/site-data";
+import { BOOKING_URL, BOOKITNOW_URL, ELEKTROEPILIACIJA_URL, INSTAGRAM_URL, FACEBOOK_URL } from "@/lib/site-data";
 import { ExternalLink } from "lucide-react";
 
 export function Footer() {
@@ -53,6 +53,17 @@ export function Footer() {
                   className="hover:text-white transition-colors flex items-center gap-1"
                 >
                   Treatwell registracija
+                  <ExternalLink size={12} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={BOOKITNOW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors flex items-center gap-1"
+                >
+                  BookitNow registracija
                   <ExternalLink size={12} />
                 </a>
               </li>
