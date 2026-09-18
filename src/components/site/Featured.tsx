@@ -41,9 +41,9 @@ export function Featured() {
           {CARDS.map((c) => (
             <div
               key={c.title}
-              className="group bg-card p-8 sm:p-9 border border-border hover:border-[#221C1A]/40 transition-all duration-300 flex flex-col"
+              className="group bg-card rounded-xl p-8 sm:p-9 border border-border hover:border-[#221C1A]/40 transition-all duration-300 flex flex-col"
             >
-              <div className="w-10 h-10 border border-[var(--gold)]/40 flex items-center justify-center mb-6 group-hover:border-[var(--gold)] transition-colors">
+              <div className="w-10 h-10 rounded-lg border border-[var(--gold)]/40 flex items-center justify-center mb-6 group-hover:border-[var(--gold)] transition-colors">
                 <c.icon size={18} className="text-[var(--gold)]" />
               </div>
               <h3 className="font-serif text-2xl mb-3 text-foreground">{c.title}</h3>
@@ -53,7 +53,7 @@ export function Featured() {
                   href={c.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-none text-xs font-medium uppercase tracking-[0.15em] border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 self-start"
+                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-[0.15em] border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 self-start"
                 >
                   {c.buttonText}
                   <ExternalLink size={13} />

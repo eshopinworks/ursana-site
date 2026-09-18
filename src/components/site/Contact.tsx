@@ -14,7 +14,7 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-          <div className="bg-card p-8 sm:p-10 border border-border flex flex-col">
+          <div className="bg-card rounded-xl p-8 sm:p-10 border border-border flex flex-col">
             <ul className="space-y-7 flex-1">
               <li className="flex gap-4">
                 <MapPin size={20} className="text-[var(--gold)] mt-1 shrink-0" />
@@ -66,13 +66,13 @@ export function Contact() {
                 href={BOOKITNOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-none text-xs uppercase tracking-[0.15em] font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)] hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)] hover:text-white transition-all duration-300"
               >
                 BookitNow registracija
               </a>
               <a
                 href="tel:+37065030443"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-none text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
               >
                 <PhoneCall size={14} className="text-[var(--gold)]" />
                 Skambinti
@@ -80,7 +80,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="overflow-hidden border border-border min-h-[420px] bg-card">
+          <div className="overflow-hidden rounded-xl border border-border min-h-[420px] bg-card">
             <iframe
               title="Ursana studijos vieta žemėlapyje"
               src="https://www.google.com/maps?q=54.69094,25.27580&z=16&output=embed"

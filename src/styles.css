@@ -42,7 +42,7 @@
 }
 
 :root {
-  --radius: 0;
+  --radius: 0.75rem;
   /* warm nude/beige */
   --background: oklch(0.972 0.012 75);
   --foreground: oklch(0.255 0.005 0); /* #2b2b2b */

@@ -33,7 +33,7 @@ export function Gallery() {
             <button
               key={item.title}
               onClick={() => setActive(i)}
-              className="group relative overflow-hidden aspect-[4/3] bg-muted border border-border hover:border-[#221C1A]/40 transition-all duration-300 text-left"
+              className="group relative overflow-hidden rounded-xl aspect-[4/3] bg-muted border border-border hover:border-[#221C1A]/40 transition-all duration-300 text-left"
             >
               <img
                 src={item.src}
@@ -66,7 +66,7 @@ export function Gallery() {
             <img
               src={ITEMS[active].src}
               alt={ITEMS[active].title}
-              className="max-w-[95vw] max-h-[85vh] object-contain border border-white/20"
+              className="max-w-[95vw] max-h-[85vh] object-contain rounded-lg border border-white/20"
             />
             <p className="text-white/80 text-sm mt-3 font-serif tracking-wide">{ITEMS[active].title}</p>
           </div>

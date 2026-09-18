@@ -11,7 +11,7 @@ type Props = {
 
 export function BookButton({ children = "Rezervuoti vizitą", variant = "primary", size = "md", className, href = "#paslaugos" }: Props) {
   const base =
-    "inline-flex items-center justify-center rounded-none font-medium uppercase tracking-[0.15em] text-xs transition-all duration-300 focus:outline-none";
+    "inline-flex items-center justify-center rounded-lg font-medium uppercase tracking-[0.15em] text-xs transition-all duration-300 focus:outline-none";
   const sizes = { md: "px-6 py-3.5", lg: "px-8 py-4 text-sm" };
   const variants = {
     primary:

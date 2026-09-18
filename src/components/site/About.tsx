@@ -38,12 +38,12 @@ export function About() {
           </div>
         </div>
         <div className="order-1 md:order-2 relative">
-          <div className="absolute -inset-3 sm:-inset-4 border border-[var(--gold)]/40 pointer-events-none" />
+          <div className="absolute -inset-3 sm:-inset-4 border border-[var(--gold)]/40 rounded-2xl pointer-events-none" />
           <img
             src={studioInteriorPlants}
             onError={(e) => ((e.currentTarget as HTMLImageElement).src = FALLBACK_IMAGES[2])}
             alt="Ursana jauki studijos erdvė Vilniuje"
-            className="relative w-full aspect-[4/5] object-cover border border-border"
+            className="relative w-full aspect-[4/5] object-cover rounded-xl border border-border"
             loading="lazy"
           />
         </div>

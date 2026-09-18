@@ -77,13 +77,13 @@ export function Hero() {
           </div>
         </div>
 
-        {/* RIGHT: crisp architectural image frame + floating info */}
+        {/* RIGHT: subtle rounded architectural image frame + floating info */}
         <div className="relative lg:h-[620px] h-[420px] sm:h-[500px]">
           {/* hairline offset frame */}
-          <div className="absolute -inset-3 sm:-inset-4 border border-[var(--gold)]/40 pointer-events-none" />
+          <div className="absolute -inset-3 sm:-inset-4 border border-[var(--gold)]/40 rounded-2xl pointer-events-none" />
 
           {/* main image */}
-          <div className="absolute inset-0 overflow-hidden border border-border bg-card">
+          <div className="absolute inset-0 overflow-hidden rounded-xl border border-border bg-card">
             <img
               src={heroImage}
               alt="Ursana grožio studijos interjeras"
@@ -94,7 +94,7 @@ export function Hero() {
           </div>
 
           {/* floating review card */}
-          <div className="absolute -bottom-4 left-4 sm:left-6 bg-card px-5 py-4 border border-border max-w-[280px] shadow-sm">
+          <div className="absolute -bottom-4 left-4 sm:left-6 bg-card rounded-lg px-5 py-4 border border-border max-w-[280px] shadow-sm">
             <div className="flex items-center gap-1 mb-1.5">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star
@@ -111,7 +111,7 @@ export function Hero() {
           </div>
 
           {/* floating location badge */}
-          <div className="hidden sm:flex absolute top-4 -left-3 lg:-left-5 items-center gap-2 bg-card px-3.5 py-2 border border-border shadow-sm">
+          <div className="hidden sm:flex absolute top-4 -left-3 lg:-left-5 items-center gap-2 bg-card rounded-md px-3.5 py-2 border border-border shadow-sm">
             <MapPin size={13} className="text-[var(--gold)]" />
             <span className="text-xs text-foreground/90 font-medium uppercase tracking-wider">Goštauto g. 3-2</span>
           </div>

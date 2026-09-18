@@ -36,7 +36,7 @@ export function Reviews() {
           {REVIEWS.map((r) => (
             <figure
               key={r.name}
-              className="relative bg-card border border-border p-7 overflow-hidden hover:border-[#221C1A]/40 transition-all duration-300 group"
+              className="relative bg-card rounded-xl border border-border p-7 overflow-hidden hover:border-[#221C1A]/40 transition-all duration-300 group"
             >
               {/* Left gold accent */}
               <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[var(--gold)]/60 group-hover:bg-[var(--gold)] transition-colors duration-300" />
@@ -44,7 +44,7 @@ export function Reviews() {
               <div className="pl-4 relative">
                 {/* Avatar + name */}
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-surface border border-border flex items-center justify-center font-serif text-xs font-medium text-[var(--gold)] shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-surface border border-border flex items-center justify-center font-serif text-xs font-medium text-[var(--gold)] shrink-0">
                     {r.name.charAt(0)}
                   </div>
                   <div className="min-w-0">
@@ -81,7 +81,7 @@ export function Reviews() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-none border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
+            className="inline-flex items-center justify-center rounded-lg border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
           >
             Skaityti visus atsiliepimus
           </a>
