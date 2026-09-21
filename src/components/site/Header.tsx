@@ -54,14 +54,14 @@ export function Header() {
               )}
             >
               {n.label}
-              {n.external && <span className="text-[9px] tracking-wider uppercase border border-[var(--gold)]/50 px-1.5 py-0.5 text-[var(--gold)]">išorinis</span>}
+              {n.external && <span className="text-[9px] tracking-wider uppercase border border-[var(--gold)]/50 px-1.5 py-0.5 text-[var(--gold)] rounded">išorinis</span>}
             </a>
           ))}
         </nav>
         <div className="hidden lg:flex items-center gap-3">
           <a
             href={`tel:${PHONE}`}
-            className="inline-flex items-center gap-2 px-4 py-3 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-2 px-4 py-3 rounded-lg text-xs uppercase tracking-wider font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
           >
             <Phone size={13} className="text-[var(--gold)]" />
             Skambinti
@@ -114,7 +114,7 @@ export function Header() {
             <a
               href={`tel:${PHONE}`}
               onClick={() => setOpen(false)}
-              className="mt-3 inline-flex w-full items-center justify-center gap-2 px-4 py-3.5 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
+              className="mt-3 inline-flex w-full items-center justify-center gap-2 px-4 py-3.5 rounded-lg text-xs uppercase tracking-wider font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
             >
               <Phone size={13} className="text-[var(--gold)]" />
               Skambinti {PHONE_DISPLAY}

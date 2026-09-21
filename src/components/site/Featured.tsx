@@ -37,29 +37,31 @@ export function Featured() {
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--gold)] mb-3">Dažniausiai pasirenkamos procedūros</p>
           <h2 className="font-serif text-3xl sm:text-5xl text-foreground">Klienčių pamėgtos paslaugos</h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {CARDS.map((c) => (
             <div
               key={c.title}
-              className="group bg-card rounded-xl p-8 sm:p-9 border border-border hover:border-[#221C1A]/40 transition-all duration-300 flex flex-col"
+              className="group bg-card rounded-xl p-6 sm:p-7 border border-border hover:border-[#221C1A]/40 transition-all duration-300 flex flex-col"
             >
-              <div className="w-10 h-10 rounded-lg border border-[var(--gold)]/40 flex items-center justify-center mb-6 group-hover:border-[var(--gold)] transition-colors">
+              <div className="w-10 h-10 rounded-lg border border-[var(--gold)]/40 flex items-center justify-center mb-5 group-hover:border-[var(--gold)] transition-colors">
                 <c.icon size={18} className="text-[var(--gold)]" />
               </div>
-              <h3 className="font-serif text-2xl mb-3 text-foreground">{c.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">{c.text}</p>
+              <h3 className="font-serif text-xl sm:text-2xl mb-3 text-foreground">{c.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">{c.text}</p>
               {c.externalUrl ? (
                 <a
                   href={c.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-[0.15em] border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 self-start"
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg text-xs font-medium border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 w-full sm:w-auto mt-auto"
                 >
-                  {c.buttonText}
-                  <ExternalLink size={13} />
+                  <span>{c.buttonText}</span>
+                  <ExternalLink size={13} className="shrink-0" />
                 </a>
               ) : (
-                <BookButton variant="outline" className="self-start">Rezervuoti vizitą</BookButton>
+                <BookButton variant="outline" size="sm" className="w-full sm:w-auto mt-auto">
+                  Rezervuoti vizitą
+                </BookButton>
               )}
             </div>
           ))}

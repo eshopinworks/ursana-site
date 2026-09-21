@@ -11,15 +11,19 @@ type Props = {
 
 export function BookButton({ children = "Rezervuoti vizitą", variant = "primary", size = "md", className, href = "#paslaugos" }: Props) {
   const base =
-    "inline-flex items-center justify-center rounded-lg font-medium uppercase tracking-[0.15em] text-xs transition-all duration-300 focus:outline-none";
-  const sizes = { md: "px-6 py-3.5", lg: "px-8 py-4 text-sm" };
+    "inline-flex items-center justify-center rounded-lg font-medium uppercase tracking-wider text-xs transition-all duration-300 focus:outline-none shrink-0";
+  const sizes = {
+    sm: "px-4 py-2.5 text-xs",
+    md: "px-5 py-3 text-xs",
+    lg: "px-7 py-3.5 text-xs sm:text-sm",
+  };
   const variants = {
     primary:
       "bg-[#221C1A] text-white hover:bg-[var(--gold)] border border-[#221C1A] hover:border-[var(--gold)]",
     outline:
-      "border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white",
+      "border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white",
     ghost:
-      "border border-white/60 text-white hover:bg-white hover:text-[#221C1A]",
+      "border border-border text-foreground hover:bg-foreground hover:text-background",
   };
   const isHash = href.startsWith("#");
   return (

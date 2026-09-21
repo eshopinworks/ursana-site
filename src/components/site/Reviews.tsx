@@ -18,7 +18,7 @@ export function Reviews() {
     <section id="atsiliepimai" className="py-20 sm:py-28">
       <div ref={fade.ref} className={`${fade.className} mx-auto max-w-6xl px-5 sm:px-8`}>
         <div className="text-center mb-14 max-w-2xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-gold mb-3">Atsiliepimai</p>
+          <p className="text-xs tracking-[0.25em] uppercase text-gold mb-3">Atsiliepimai</p>
           <h2 className="font-serif text-3xl sm:text-5xl mb-3">4,9 ★</h2>
           <p className="text-muted-foreground">
             <a
@@ -81,7 +81,7 @@ export function Reviews() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg border border-[#221C1A]/40 text-[#221C1A] hover:bg-[#221C1A] hover:text-white px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
+            className="inline-flex items-center justify-center rounded-lg border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white px-6 py-3 text-xs font-medium uppercase tracking-wider transition-all duration-300"
           >
             Skaityti visus atsiliepimus
           </a>

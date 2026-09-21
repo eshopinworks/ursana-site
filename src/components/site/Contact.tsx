@@ -60,19 +60,21 @@ export function Contact() {
                 </div>
               </li>
             </ul>
-            <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row flex-wrap gap-3">
-              <BookButton size="lg" className="w-full sm:w-auto">Rezervuoti vizitą</BookButton>
+            <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row flex-wrap gap-3">
+              <BookButton size="md" className="w-full sm:w-auto">
+                Rezervuoti vizitą
+              </BookButton>
               <a
                 href={BOOKITNOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[var(--gold)]/60 text-foreground hover:bg-[var(--gold)] hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-xs uppercase tracking-wider font-medium border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300 w-full sm:w-auto"
               >
                 BookitNow registracija
               </a>
               <a
                 href="tel:+37065030443"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-xs uppercase tracking-[0.15em] font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-xs uppercase tracking-wider font-medium border border-[#221C1A]/30 text-foreground hover:bg-[#221C1A] hover:text-white transition-all duration-300 w-full sm:w-auto"
               >
                 <PhoneCall size={14} className="text-[var(--gold)]" />
                 Skambinti

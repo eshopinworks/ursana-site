@@ -10,8 +10,10 @@ export function Services() {
     <section id="paslaugos" className="py-20 sm:py-28 bg-blush-soft overflow-x-hidden">
       <div ref={fade.ref} className={fade.className}>
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
-          <div className="text-center mb-8 max-w-2xl mx-auto">
-            <h2 className="font-serif text-3xl sm:text-5xl">Registracija</h2>
+          <div className="text-center mb-10 max-w-2xl mx-auto">
+            <p className="text-xs tracking-[0.25em] uppercase text-[var(--gold)] mb-3">Paslaugos ir registracija</p>
+            <h2 className="font-serif text-3xl sm:text-5xl mb-3">Registracija internetu</h2>
+            <p className="text-sm text-muted-foreground">Pasirinkite norimą paslaugą ir patogų vizito laiką tiesiogiai sistemoje</p>
           </div>
         </div>
 

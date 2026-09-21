@@ -14,37 +14,37 @@ export function Hero() {
         {/* LEFT: text */}
         <div className="relative">
           {/* eyebrow */}
-          <div className="flex items-center gap-3 mb-7">
-            <span className="h-px w-10 bg-[var(--gold)]" />
-            <span className="text-[11px] sm:text-xs tracking-[0.35em] uppercase text-[var(--gold)] font-medium">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-px w-8 bg-[var(--gold)]" />
+            <span className="text-xs tracking-[0.25em] uppercase text-[var(--gold)] font-medium">
               Naujamiestis · Vilnius
             </span>
           </div>
 
-          <h1 className="font-serif text-foreground mb-7 [font-size:clamp(2.75rem,6.5vw+1rem,5.75rem)] [line-height:0.98]">
+          <h1 className="font-serif text-foreground mb-6 text-3xl sm:text-5xl lg:text-6xl leading-[1.08] break-words">
             Profesionali veido estetika
             <br />
             Vilniaus <em className="text-[var(--gold)]">centre</em>
           </h1>
 
-          <p className="text-base sm:text-lg text-foreground/70 max-w-xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-foreground/75 max-w-xl leading-relaxed mb-8">
             Ursana - grožio ir estetinės priežiūros studija Naujamiestyje, Vilniuje. Čia atliekamos
             veido procedūros, lazerinė depiliacija ir liftingo masažai, pritaikyti individualiems
             jūsų poreikiams.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-12">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10">
             <BookButton size="lg" className="group">
               Rezervuoti vizitą
               <ArrowRight
-                size={16}
+                size={15}
                 className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
               />
             </BookButton>
             <a
               href="#paslaugos"
-              className="inline-flex items-center justify-center px-2 py-3.5 text-sm font-medium text-foreground/80 hover:text-[var(--gold)] transition-colors"
+              className="inline-flex items-center justify-center px-4 py-3 text-xs uppercase tracking-wider font-medium text-foreground/80 hover:text-[var(--gold)] transition-colors"
             >
               <span className="border-b border-foreground/30 hover:border-[var(--gold)] pb-0.5">
                 Peržiūrėti paslaugas
@@ -53,25 +53,25 @@ export function Hero() {
           </div>
 
           {/* mini stats row */}
-          <div className="grid grid-cols-3 gap-6 sm:gap-10 max-w-md pt-8 border-t border-border">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-md pt-6 border-t border-border">
             <div>
               <div className="font-serif text-2xl sm:text-3xl text-foreground">
                 4,9 <span className="text-[var(--gold)]">★</span>
               </div>
-              <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
-                įvertinimas
+              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
+                Įvertinimas
               </div>
             </div>
             <div>
               <div className="font-serif text-2xl sm:text-3xl text-foreground">289</div>
-              <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
-                atsiliepimai
+              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
+                Atsiliepimai
               </div>
             </div>
             <div>
               <div className="font-serif text-2xl sm:text-3xl text-foreground">280+</div>
-              <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
-                klientų
+              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
+                Klientų
               </div>
             </div>
           </div>
