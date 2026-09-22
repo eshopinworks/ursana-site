@@ -35,43 +35,42 @@
   --color-blush-soft: var(--blush-soft);
   --color-surface: var(--surface);
   --color-nude: var(--nude);
-  --font-serif: "Fraunces", "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
   --font-editorial: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
 }
 
 :root {
-  --radius: 0.75rem;
-  /* warm nude/beige */
-  --background: oklch(0.972 0.012 75);
-  --foreground: oklch(0.255 0.005 0); /* #2b2b2b */
-  --card: oklch(0.99 0.006 75);
-  --card-foreground: oklch(0.255 0.005 0);
-  --popover: oklch(0.99 0.006 75);
-  --popover-foreground: oklch(0.255 0.005 0);
-  /* champagne / gold #c2a878 */
-  --primary: oklch(0.74 0.06 80);
-  --primary-foreground: oklch(0.18 0.005 0);
-  --secondary: oklch(0.94 0.015 60);
-  --secondary-foreground: oklch(0.255 0.005 0);
-  --muted: oklch(0.94 0.012 70);
-  --muted-foreground: oklch(0.34 0.012 60);
-  /* soft blush rose */
-  --accent: oklch(0.9 0.035 25);
-  --accent-foreground: oklch(0.255 0.005 0);
-  --destructive: oklch(0.6 0.2 25);
-  --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.85 0.02 70);
-  --input: oklch(0.85 0.02 70);
-  --ring: oklch(0.58 0.09 75);
+  --radius: 0.625rem;
+  /* Natural warm linen canvas */
+  --background: #FAF8F5;
+  --foreground: #1F1B18; /* rich dark espresso */
+  --card: #FFFFFF;
+  --card-foreground: #1F1B18;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F1B18;
+  /* deep espresso primary */
+  --primary: #221C1A;
+  --primary-foreground: #FAF8F5;
+  --secondary: #F3EFE8;
+  --secondary-foreground: #1F1B18;
+  --muted: #F3EFE8;
+  --muted-foreground: #6F6762;
+  --accent: #EFE9E0;
+  --accent-foreground: #1F1B18;
+  --destructive: #A33A3A;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8E3DC;
+  --input: #E8E3DC;
+  --ring: #9E8255;
 
-  /* deeper bronze-gold for stronger contrast on blush/cream backgrounds */
-  --gold: oklch(0.56 0.09 75);
-  --blush: oklch(0.86 0.05 25);
-  --blush-soft: oklch(0.95 0.018 30);
-  --surface: oklch(0.94 0.018 60);
-  --nude: oklch(0.972 0.012 75);
+  /* champagne bronze accent */
+  --gold: #9E8255;
+  --blush: #EFE7DE;
+  --blush-soft: #F4EFE7;
+  --surface: #F4EFE7;
+  --nude: #FAF8F5;
 }
 
 @layer base {
@@ -95,19 +94,16 @@
   h1, h2, h3, h4, h5, .font-serif {
     font-family: var(--font-serif);
     font-optical-sizing: auto;
-    font-variation-settings: "opsz" 144, "SOFT" 50;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    font-weight: 400;
+    letter-spacing: -0.015em;
     color: var(--color-foreground);
   }
-  h1 { font-size: clamp(2.25rem, 5vw + 1rem, 4.75rem); letter-spacing: -0.03em; line-height: 1.12; }
-  h2 { font-size: clamp(1.85rem, 2.8vw + 1rem, 3.25rem); letter-spacing: -0.02em; line-height: 1.18; }
-  h3 { font-size: clamp(1.25rem, 1vw + 1rem, 1.75rem); letter-spacing: -0.015em; line-height: 1.25; }
+  h1 { font-size: clamp(2.35rem, 4.5vw + 1rem, 4.25rem); letter-spacing: -0.025em; line-height: 1.1; font-weight: 500; }
+  h2 { font-size: clamp(1.85rem, 2.5vw + 1rem, 3.15rem); letter-spacing: -0.02em; line-height: 1.15; font-weight: 500; }
+  h3 { font-size: clamp(1.2rem, 1.2vw + 0.8rem, 1.65rem); letter-spacing: -0.01em; line-height: 1.25; font-weight: 500; }
   p { text-wrap: pretty; }
   h1, h2, h3 { text-wrap: balance; }
-  em { font-style: italic; font-family: var(--font-editorial); font-variation-settings: normal; }
-  ::selection { background: color-mix(in oklab, var(--gold) 35%, transparent); color: var(--foreground); }
+  em { font-style: italic; font-family: var(--font-serif); font-weight: 400; }
+  ::selection { background: #E8DFD0; color: #1F1B18; }
 }
 
 @utility fade-in-up {

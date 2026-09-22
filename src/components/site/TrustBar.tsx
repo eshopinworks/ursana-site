@@ -1,20 +1,50 @@
-import { Star, MessageCircle, Languages, MapPin } from "lucide-react";
+import { Star, ShieldCheck, Languages, MapPin } from "lucide-react";
 
-const ITEMS = [
-  { icon: Star, label: "4,9 ★ įvertinimas" },
-  { icon: MessageCircle, label: "289 atsiliepimai" },
-  { icon: Languages, label: "5 kalbos: LT, RU, EN, DE, PL" },
-  { icon: MapPin, label: "Goštauto g. 3-2, Vilnius" },
+const PILLARS = [
+  {
+    icon: Star,
+    label: "4,9 ★ Įvertinimas",
+    desc: "289 atsiliepimai Treatwell",
+  },
+  {
+    icon: ShieldCheck,
+    label: "DECTRO Įranga",
+    desc: "Sertifikuota elektroepiliacija",
+  },
+  {
+    icon: Languages,
+    label: "5 Kalbos",
+    desc: "LT, RU, EN, DE, PL",
+  },
+  {
+    icon: MapPin,
+    label: "Goštauto g. 3-2",
+    desc: "Naujamiestis, Vilnius",
+  },
 ];
 
 export function TrustBar() {
   return (
-    <section className="border-y border-border/60 bg-surface">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-        {ITEMS.map((it) => (
-          <div key={it.label} className="flex items-center gap-2.5 text-xs sm:text-sm text-foreground/85 font-medium">
-            <it.icon size={17} className="text-[var(--gold)] shrink-0" />
-            <span className="truncate sm:text-clip">{it.label}</span>
+    <section className="border-y border-border bg-[#F5F2EC]">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-7 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {PILLARS.map((p, idx) => (
+          <div
+            key={p.label}
+            className={`flex items-start gap-3.5 ${
+              idx !== 0 ? "lg:border-l lg:border-border/80 lg:pl-8" : ""
+            }`}
+          >
+            <div className="w-8 h-8 rounded-lg bg-white border border-border flex items-center justify-center shrink-0 mt-0.5 text-[var(--gold)]">
+              <p.icon size={15} />
+            </div>
+            <div>
+              <div className="font-serif text-sm sm:text-base font-medium text-foreground tracking-tight">
+                {p.label}
+              </div>
+              <div className="text-xs text-muted-foreground mt-0.5">
+                {p.desc}
+              </div>
+            </div>
           </div>
         ))}
       </div>

@@ -36,8 +36,13 @@ export function Header() {
       )}
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between">
-        <a href="#top" className="font-serif text-2xl sm:text-3xl tracking-[0.25em] text-foreground">
-          URSANA
+        <a href="#top" className="group flex flex-col">
+          <span className="font-serif text-2xl sm:text-3xl tracking-[0.25em] text-foreground leading-none">
+            URSANA
+          </span>
+          <span className="text-[9px] uppercase tracking-[0.25em] text-[var(--gold)] font-medium mt-1">
+            Grožio studija · Vilnius
+          </span>
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {NAV.map((n) => (
@@ -47,14 +52,14 @@ export function Header() {
               target={n.external ? "_blank" : undefined}
               rel={n.external ? "noopener noreferrer" : undefined}
               className={cn(
-                "text-sm transition-colors",
+                "text-xs uppercase tracking-wider font-medium transition-colors",
                 n.external
-                  ? "text-[var(--gold)] font-medium hover:underline flex items-center gap-1"
-                  : "text-foreground/80 hover:text-[var(--gold)]",
+                  ? "text-[var(--gold)] hover:text-foreground flex items-center gap-1"
+                  : "text-foreground/75 hover:text-foreground",
               )}
             >
               {n.label}
-              {n.external && <span className="text-[9px] tracking-wider uppercase border border-[var(--gold)]/50 px-1.5 py-0.5 text-[var(--gold)] rounded">išorinis</span>}
+              {n.external && <span className="text-[10px]">↗</span>}
             </a>
           ))}
         </nav>

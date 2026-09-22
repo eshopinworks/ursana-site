@@ -1,4 +1,4 @@
-import { Star, ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { BookButton } from "./BookButton";
 import heroImage from "@/assets/hero-studio-light.jpg";
 
@@ -6,31 +6,25 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-background pt-28 sm:pt-32 pb-16 sm:pb-24"
+      className="relative overflow-hidden bg-background pt-28 sm:pt-36 pb-16 sm:pb-24"
     >
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-16 items-center">
-        {/* LEFT: text */}
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
+        {/* LEFT: Editorial Typography */}
         <div className="relative">
-          {/* eyebrow */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-8 bg-[var(--gold)]" />
-            <span className="text-xs tracking-[0.25em] uppercase text-[var(--gold)] font-medium">
-              Naujamiestis · Vilnius
-            </span>
+          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-md bg-secondary/80 border border-border text-[11px] uppercase tracking-[0.2em] text-foreground/80 font-medium mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" />
+            Naujamiestis · A. Goštauto g. 3-2, Vilnius
           </div>
 
-          <h1 className="font-serif text-foreground mb-6 text-3xl sm:text-5xl lg:text-6xl leading-[1.08] break-words">
-            Profesionali veido estetika
-            <br />
-            Vilniaus <em className="text-[var(--gold)]">centre</em>
+          <h1 className="font-serif text-foreground text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight mb-6">
+            Veido estetika ir pažangios technologijos{" "}
+            <em className="font-serif italic font-normal text-[var(--gold)]">Vilniaus centre</em>
           </h1>
 
           <p className="text-base sm:text-lg text-foreground/75 max-w-xl leading-relaxed mb-8">
-            Ursana - grožio ir estetinės priežiūros studija Naujamiestyje, Vilniuje. Čia atliekamos
-            veido procedūros, lazerinė depiliacija ir liftingo masažai, pritaikyti individualiems
-            jūsų poreikiams.
+            Grožio studija „Ursana“ - individualiai parinktos veido procedūros,
+            japoniškas Kobido masažas ir sertifikuota DECTRO elektroepiliacija.
+            Rami, privati erdvė ir dėmesys kiekvienos moters odos poreikiams.
           </p>
 
           {/* CTAs */}
@@ -44,76 +38,52 @@ export function Hero() {
             </BookButton>
             <a
               href="#paslaugos"
-              className="inline-flex items-center justify-center px-4 py-3 text-xs uppercase tracking-wider font-medium text-foreground/80 hover:text-[var(--gold)] transition-colors"
+              className="inline-flex items-center justify-center px-5 py-3.5 text-xs uppercase tracking-wider font-medium text-foreground/80 hover:text-foreground border border-border hover:border-[#221C1A]/40 rounded-lg transition-colors"
             >
-              <span className="border-b border-foreground/30 hover:border-[var(--gold)] pb-0.5">
-                Peržiūrėti paslaugas
-              </span>
+              Paslaugų sąrašas
             </a>
           </div>
 
-          {/* mini stats row */}
-          <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-md pt-6 border-t border-border">
-            <div>
-              <div className="font-serif text-2xl sm:text-3xl text-foreground">
-                4,9 <span className="text-[var(--gold)]">★</span>
+          {/* Understated Editorial Proof Bar */}
+          <div className="pt-6 border-t border-border flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-muted-foreground">
+            <div className="flex items-center gap-1.5">
+              <span className="font-serif text-base font-semibold text-foreground">4,9</span>
+              <div className="flex text-[var(--gold)]">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={11} className="fill-[var(--gold)]" />
+                ))}
               </div>
-              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
-                Įvertinimas
-              </div>
+              <span className="text-[11px] text-muted-foreground ml-1">/ 289 Treatwell atsiliepimai</span>
             </div>
-            <div>
-              <div className="font-serif text-2xl sm:text-3xl text-foreground">289</div>
-              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
-                Atsiliepimai
-              </div>
+            <span className="hidden sm:inline text-border">|</span>
+            <div className="text-[11px] tracking-wide">
+              <span className="font-medium text-foreground">280+</span> nuolatinių klienčių
             </div>
-            <div>
-              <div className="font-serif text-2xl sm:text-3xl text-foreground">280+</div>
-              <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
-                Klientų
-              </div>
+            <span className="hidden sm:inline text-border">|</span>
+            <div className="text-[11px] tracking-wide text-foreground/80">
+              DECTRO elektroepiliacija
             </div>
           </div>
         </div>
 
-        {/* RIGHT: subtle rounded architectural image frame + floating info */}
-        <div className="relative lg:h-[620px] h-[420px] sm:h-[500px]">
-          {/* hairline offset frame */}
-          <div className="absolute -inset-3 sm:-inset-4 border border-[var(--gold)]/40 rounded-2xl pointer-events-none" />
-
-          {/* main image */}
-          <div className="absolute inset-0 overflow-hidden rounded-xl border border-border bg-card">
+        {/* RIGHT: High-end Architectural Portrait Presentation */}
+        <div className="relative">
+          <div className="relative overflow-hidden rounded-xl border border-border bg-card shadow-[0_20px_50px_-20px_rgba(34,28,26,0.12)] aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
             <img
               src={heroImage}
-              alt="Ursana grožio studijos interjeras"
+              alt="Ursana grožio studijos interjeras Vilniuje"
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-          </div>
-
-          {/* floating review card */}
-          <div className="absolute -bottom-4 left-4 sm:left-6 bg-card rounded-lg px-5 py-4 border border-border max-w-[280px] shadow-sm">
-            <div className="flex items-center gap-1 mb-1.5">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star
-                  key={i}
-                  size={12}
-                  className="fill-[var(--gold)] text-[var(--gold)]"
-                />
-              ))}
+            {/* Elegant Bottom Editorial Inset Plaque */}
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-7 flex flex-col justify-end text-white">
+              <span className="text-[11px] uppercase tracking-[0.25em] text-[#E0C9A0] font-medium mb-1">
+                Ursana · Naujamiestis
+              </span>
+              <p className="font-serif text-lg sm:text-xl text-white/95 leading-snug">
+                Privati ir jauki aplinka Jūsų odos priežiūros ritualams
+              </p>
             </div>
-            <p className="text-xs text-foreground/85 leading-snug">
-              "Puikiai išmano savo darbą. Likau labai patenkinta rezultatu."
-            </p>
-            <p className="text-[11px] text-muted-foreground uppercase tracking-wider mt-2">- Daiva</p>
-          </div>
-
-          {/* floating location badge */}
-          <div className="hidden sm:flex absolute top-4 -left-3 lg:-left-5 items-center gap-2 bg-card rounded-md px-3.5 py-2 border border-border shadow-sm">
-            <MapPin size={13} className="text-[var(--gold)]" />
-            <span className="text-xs text-foreground/90 font-medium uppercase tracking-wider">Goštauto g. 3-2</span>
           </div>
         </div>
       </div>

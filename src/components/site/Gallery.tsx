@@ -22,11 +22,18 @@ export function Gallery() {
   const fade = useFadeIn<HTMLDivElement>();
 
   return (
-    <section id="galerija" className="py-20 sm:py-28 bg-blush-soft">
+    <section id="galerija" className="py-20 sm:py-28 bg-background border-t border-border">
       <div ref={fade.ref} className={`${fade.className} mx-auto max-w-7xl px-5 sm:px-8`}>
-        <div className="text-center mb-12 max-w-2xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--gold)] mb-3">Galerija</p>
-          <h2 className="font-serif text-3xl sm:text-5xl">Studijos erdvė ir procedūros</h2>
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
+            Nuotraukų galerija
+          </p>
+          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
+            Studijos erdvė ir procedūros
+          </h2>
+          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            Švari, jauki ir kruopščiai įrengta erdvė Vilniaus centre, pritaikyta ramiam Jūsų poilsiui.
+          </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {ITEMS.map((item, i) => (

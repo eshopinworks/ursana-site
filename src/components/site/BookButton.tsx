@@ -19,11 +19,11 @@ export function BookButton({ children = "Rezervuoti vizitą", variant = "primary
   };
   const variants = {
     primary:
-      "bg-[#221C1A] text-white hover:bg-[var(--gold)] border border-[#221C1A] hover:border-[var(--gold)]",
+      "bg-[#221C1A] text-white hover:bg-[#38302C] border border-[#221C1A] shadow-sm",
     outline:
-      "border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white",
+      "border border-border hover:border-[#221C1A]/50 text-foreground hover:bg-[#221C1A] hover:text-white bg-transparent",
     ghost:
-      "border border-border text-foreground hover:bg-foreground hover:text-background",
+      "border border-border text-foreground hover:bg-secondary",
   };
   const isHash = href.startsWith("#");
   return (

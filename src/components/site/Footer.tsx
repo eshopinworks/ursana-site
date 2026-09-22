@@ -3,11 +3,18 @@ import { ExternalLink } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a1817] text-white/70 py-14 border-t border-white/10">
+    <footer className="bg-[#181513] text-white/70 py-16 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           <div className="md:col-span-2">
-            <div className="font-serif text-2xl tracking-[0.25em] text-white mb-4">URSANA</div>
+            <div className="flex flex-col mb-4">
+              <span className="font-serif text-2xl tracking-[0.25em] text-white leading-none">
+                URSANA
+              </span>
+              <span className="text-[9px] uppercase tracking-[0.25em] text-[var(--gold)] font-medium mt-1">
+                Grožio studija · Vilnius
+              </span>
+            </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-md mb-4">
               Grožio ir estetinės priežiūros studija Vilniaus centre. Profesionali aparatūra, ilgametė patirtis ir individualus dėmesys kiekvienai klientei.
             </p>
