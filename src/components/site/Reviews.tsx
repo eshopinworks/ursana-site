@@ -32,7 +32,7 @@ export function Reviews() {
                       <Star key={i} size={13} className="fill-[var(--gold)]" />
                     ))}
                   </div>
-                  <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60 font-medium">
+                  <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/60 font-medium">
                     <CheckCircle size={10} />
                     Patvirtintas vizitas
                   </span>

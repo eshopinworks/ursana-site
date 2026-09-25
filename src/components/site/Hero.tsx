@@ -1,6 +1,6 @@
 import { ArrowRight, Star } from "lucide-react";
 import { BookButton } from "./BookButton";
-import heroImage from "@/assets/hero-studio-light.jpg";
+import heroImage from "@/assets/salonas-pagrindine.jpg";
 
 export function Hero() {
   return (
@@ -12,7 +12,7 @@ export function Hero() {
         {/* LEFT: Editorial Typography */}
         <div className="relative">
           <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-md bg-secondary/80 border border-border text-[11px] uppercase tracking-[0.2em] text-foreground/80 font-medium mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" />
+            <span className="w-1.5 h-1.5 rounded-none bg-[var(--gold)]" />
             Naujamiestis · A. Goštauto g. 3-2, Vilnius
           </div>
 
@@ -23,8 +23,8 @@ export function Hero() {
 
           <p className="text-base sm:text-lg text-foreground/75 max-w-xl leading-relaxed mb-8">
             Grožio studija „Ursana“ - individualiai parinktos veido procedūros,
-            japoniškas Kobido masažas ir sertifikuota DECTRO elektroepiliacija.
-            Rami, privati erdvė ir dėmesys kiekvienos moters odos poreikiams.
+            japoniškas Kobido masažas ir kokybiška lazerinė depiliacija.
+            Rami, privati erdvė Vilniaus centre ir profesionalus dėmesys kiekvienos moters poreikiams.
           </p>
 
           {/* CTAs */}
@@ -61,7 +61,7 @@ export function Hero() {
             </div>
             <span className="hidden sm:inline text-border">|</span>
             <div className="text-[11px] tracking-wide text-foreground/80">
-              DECTRO elektroepiliacija
+              Kokybiška lazerinė depiliacija
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-xl border border-border bg-card shadow-[0_20px_50px_-20px_rgba(34,28,26,0.12)] aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
             <img
               src={heroImage}
-              alt="Ursana grožio studijos interjeras Vilniuje"
+              alt="Ursana grožio studijos erdvė Vilniuje"
               className="w-full h-full object-cover"
               loading="eager"
             />

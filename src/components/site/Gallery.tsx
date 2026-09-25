@@ -1,20 +1,21 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, ExternalLink } from "lucide-react";
 import { useFadeIn } from "@/hooks/use-fade-in";
-import studioInteriorPlants from "@/assets/studio-interior-plants.jpg";
-import facialMassageKobido from "@/assets/facial-massage-kobido.jpg";
-import studioInteriorClean from "@/assets/studio-interior-clean.jpg";
+import salonasPagrindine from "@/assets/salonas-pagrindine.jpg";
+import veidoMasazas from "@/assets/veido-masazas.jpg";
+import lazerineDepiliacija from "@/assets/lazerine-depiliacija.jpg";
+import salonasErdve from "@/assets/salonas-erdve.jpg";
+import salonasKoridorius from "@/assets/salonas-koridorius.jpg";
 import facialTreatment from "@/assets/facial-treatment.jpg";
-import studioExterior from "@/assets/studio-exterior.jpg";
-import relaxingBodyMassage from "@/assets/relaxing-body-massage.jpg";
+import { ELEKTROEPILIACIJA_URL } from "@/lib/site-data";
 
 const ITEMS = [
-  { src: studioInteriorPlants, title: "Jauki studijos erdvė", tag: "Studija" },
-  { src: facialMassageKobido, title: "Kobido veido masažas", tag: "Masažai" },
-  { src: studioInteriorClean, title: "Meistrės darbo vietos", tag: "Studija" },
+  { src: salonasPagrindine, title: "Visa salono erdvė", tag: "Studija" },
+  { src: veidoMasazas, title: "Kobido ir veido masažai", tag: "Masažai" },
+  { src: lazerineDepiliacija, title: "Lazerinė depiliacija", tag: "Procedūros" },
+  { src: salonasErdve, title: "Jauki poilsio erdvė", tag: "Studija" },
+  { src: salonasKoridorius, title: "Studijos interjeras", tag: "Studija" },
   { src: facialTreatment, title: "Veido odos priežiūra", tag: "Procedūros" },
-  { src: studioExterior, title: "Studijos įėjimas Naujamiestyje", tag: "Aplinka" },
-  { src: relaxingBodyMassage, title: "Atpalaiduojantis masažas", tag: "Masažai" },
 ];
 
 export function Gallery() {
@@ -54,6 +55,21 @@ export function Gallery() {
               </div>
             </button>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <p className="text-xs text-muted-foreground">
+            Elektroepiliacijos procedūros atliekamos kolegės. Išsamiau:{" "}
+            <a
+              href={ELEKTROEPILIACIJA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-[var(--gold)] inline-flex items-center gap-1"
+            >
+              plaukeliusalinimas.lt
+              <ExternalLink size={11} />
+            </a>
+          </p>
         </div>
       </div>
 

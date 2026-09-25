@@ -1,38 +1,34 @@
-import { ExternalLink, ArrowRight } from "lucide-react";
 import { BookButton } from "./BookButton";
 import { useFadeIn } from "@/hooks/use-fade-in";
-import { ELEKTROEPILIACIJA_URL } from "@/lib/site-data";
-import kobidoImage from "@/assets/facial-massage-kobido.jpg";
+import veidoMasazasImage from "@/assets/veido-masazas.jpg";
+import lazerineImage from "@/assets/lazerine-depiliacija.jpg";
 import facialImage from "@/assets/facial-treatment.jpg";
-import epilImage from "@/assets/hero-studio-cozy.jpg";
-import massageImage from "@/assets/relaxing-body-massage.jpg";
+import cleanImage from "@/assets/studio-interior-clean.jpg";
 
 const PROCEDURES = [
   {
-    image: epilImage,
-    tag: "01 / TIKSLINĖ METODIKA",
-    title: "Elektroepiliacija (DECTRO)",
-    text: "Vienintelis mediciniškai pripažintas 100% ilgalaikis plaukelių šalinimo metodas su pažangiausia Kanados gamintojo DECTRO įranga. Tinka visų tipų ir spalvų plaukeliams.",
-    externalUrl: ELEKTROEPILIACIJA_URL,
-    buttonText: "plaukeliusalinimas.lt",
-  },
-  {
-    image: kobidoImage,
-    tag: "02 / RANKŲ TECHNIKA",
+    image: veidoMasazasImage,
+    tag: "01 / RANKŲ TECHNIKA",
     title: "Kobido ir veido masažai",
     text: "Japoniškas Kobido, gilus SMAS bei 3D Holivudo liftingo masažai. Natūralus veido raumenų tonizavimas, limfodrenažas ir odos stangrinimas be invazinių procedūrų.",
   },
   {
+    image: lazerineImage,
+    tag: "02 / ŠIUOLAIKINĖS TECHNOLOGIJOS",
+    title: "Lazerinė depiliacija",
+    text: "Kokybiška, saugi ir efektyvi procedūra komfortiškam plaukelių augimo stabdymui bet kurioje veido ar kūno zonoje moterims ir vyrams.",
+  },
+  {
     image: facialImage,
     tag: "03 / ODOS ATNAUJINIMAS",
-    title: "CO₂ karboksiterapija",
+    title: "CO₂ karboksiterapija ir valymas",
     text: "Neinvazinė odos atgaivinimo procedūra, prisotinanti audinius deguonimi, skatinanti kolageno gamybą, lyginanti odos mikroreljefą ir grąžinanti sveiką švytėjimą.",
   },
   {
-    image: massageImage,
-    tag: "04 / KOMFORTAS IR LYGUMAS",
-    title: "Lazerinė depiliacija",
-    text: "Šiuolaikiškos diodinės lazerinės technologijos komfortiškam ir saugiam plaukelių augimo stabdymui bet kurioje veido ar kūno zonoje moterims ir vyrams.",
+    image: cleanImage,
+    tag: "04 / TIKSLINĖ PRIEŽIŪRA",
+    title: "Regeneruojančios procedūros",
+    text: "Rūgštiniai atkuriamieji valymai (Natinuel), stangrinamosios kolageno kaukės bei radijo bangų liftingas individualiai pagal Jūsų odos poreikius.",
   },
 ];
 
@@ -83,28 +79,11 @@ export function Featured() {
                   {p.text}
                 </p>
 
-                {p.externalUrl ? (
-                  <div className="flex flex-col gap-2 mt-auto pt-4 border-t border-border/60">
-                    <a
-                      href={p.externalUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-medium border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-white transition-all duration-300"
-                    >
-                      <span>{p.buttonText}</span>
-                      <ExternalLink size={13} />
-                    </a>
-                    <BookButton variant="ghost" size="sm" className="w-full text-xs">
-                      Rezervuoti vizitą
-                    </BookButton>
-                  </div>
-                ) : (
-                  <div className="mt-auto pt-4 border-t border-border/60">
-                    <BookButton variant="primary" size="sm" className="w-full">
-                      Rezervuoti vizitą
-                    </BookButton>
-                  </div>
-                )}
+                <div className="mt-auto pt-4 border-t border-border/60">
+                  <BookButton variant="primary" size="sm" className="w-full">
+                    Rezervuoti vizitą
+                  </BookButton>
+                </div>
               </div>
             </article>
           ))}

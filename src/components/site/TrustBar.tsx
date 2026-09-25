@@ -1,4 +1,4 @@
-import { Star, ShieldCheck, Languages, MapPin } from "lucide-react";
+import { Star, Sparkles, Languages, MapPin } from "lucide-react";
 
 const PILLARS = [
   {
@@ -7,9 +7,9 @@ const PILLARS = [
     desc: "289 atsiliepimai Treatwell",
   },
   {
-    icon: ShieldCheck,
-    label: "DECTRO Įranga",
-    desc: "Sertifikuota elektroepiliacija",
+    icon: Sparkles,
+    label: "Lazerinė depiliacija",
+    desc: "Kokybiškos ir saugios procedūros",
   },
   {
     icon: Languages,

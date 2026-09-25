@@ -25,18 +25,26 @@ export function Services() {
 
           {/* Reassurance Micro-Badges */}
           <div className="mt-8 flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-xs text-foreground/80">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-border/80">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-border/80">
               <CheckCircle2 size={13} className="text-[var(--gold)]" />
               <span>Momentinis patvirtinimas</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-border/80">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-border/80">
               <Shield size={13} className="text-[var(--gold)]" />
               <span>Nemokamas atšaukimas prieš 24 val.</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-border/80">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-border/80">
               <Bell size={13} className="text-[var(--gold)]" />
               <span>SMS priminimas prieš procedūrą</span>
             </div>
+          </div>
+
+          {/* Registration Distinction Notice */}
+          <div className="mt-6 p-4 rounded-lg bg-white border border-border/80 text-xs text-foreground/80 max-w-2xl mx-auto text-left sm:text-center leading-relaxed">
+            <span className="font-semibold text-foreground">Registracijos informacija:</span> Internetu (Treatwell sistema) patogiai registruojama veido procedūroms, masažams bei lazerinei depiliacijai. Pas salono <strong className="font-semibold text-foreground">kirpėjus bei manikiūro meistrus</strong> registracija vyksta tiesiogiai telefonu:{" "}
+            <a href="tel:+37065030443" className="font-semibold text-foreground underline hover:text-[var(--gold)]">
+              +370 650 30443
+            </a>.
           </div>
         </div>
 

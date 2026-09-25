@@ -51,7 +51,7 @@ export const SERVICES: ServiceCategory[] = [
   {
     key: "lazeris",
     label: "Lazerinė depiliacija",
-    note: "Naujos kartos diodinis lazeris. Tikslią kainą lemia zona - nuo mažų zonų iki viso kūno.",
+    note: "Kokybiška, saugi ir efektyvi procedūra. Tikslią kainą lemia zona - nuo mažų zonų iki viso kūno.",
     items: [
       { name: "Plaukų šalinimas lazeriu moterims", price: "nuo 22 €" },
       { name: "Plaukų šalinimas lazeriu vyrams", price: "nuo 35 €" },
@@ -60,7 +60,7 @@ export const SERVICES: ServiceCategory[] = [
   {
     key: "elektroepiliacija",
     label: "Elektroepiliacija",
-    note: "Vienintelis 100% efektyvus ilgalaikis plaukelių šalinimo metodas su profesionalia DECTRO įranga. Nemokama pirminė konsultacija.",
+    note: "Kolegės atliekama procedūra. Išsamesnė informacija svetainėje plaukeliusalinimas.lt.",
     items: [
       { name: "Elektroepiliacija (išsamiau svetainėje)", price: "plaukeliusalinimas.lt" },
     ],

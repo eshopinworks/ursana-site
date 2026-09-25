@@ -131,6 +131,10 @@ export function Contact() {
                 Skambinti
               </a>
             </div>
+
+            <p className="mt-4 text-[11px] text-muted-foreground leading-relaxed">
+              * Internetu patogiai registruojama veido estetikos procedūroms ir lazerinei depiliacijai. Pas salono kirpėjus bei manikiūro meistrus kviečiame registruotis tiesiogiai telefonu.
+            </p>
           </div>
 
           {/* Right Map Card */}
