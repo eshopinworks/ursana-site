@@ -38,7 +38,7 @@ export function TrustBar() {
               <p.icon size={15} />
             </div>
             <div>
-              <div className="font-serif text-sm sm:text-base font-medium text-foreground tracking-tight">
+              <div className="text-sm sm:text-base font-semibold text-foreground tracking-tight">
                 {p.label}
               </div>
               <div className="text-xs text-muted-foreground mt-0.5">

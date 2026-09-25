@@ -15,7 +15,7 @@ export function Services() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
             Rezervacija internetu
           </p>
-          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
+          <h2 className="font-semibold text-3xl sm:text-5xl text-foreground mb-4">
             Pasirinkite paslaugą ir patogų vizito laiką
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">

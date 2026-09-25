@@ -16,9 +16,9 @@ export function Hero() {
             Naujamiestis · A. Goštauto g. 3-2, Vilnius
           </div>
 
-          <h1 className="font-serif text-foreground text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight mb-6">
+          <h1 className="font-semibold text-foreground text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight mb-6">
             Veido estetika ir pažangios technologijos{" "}
-            <em className="font-serif italic font-normal text-[var(--gold)]">Vilniaus centre</em>
+            <span className="font-semibold text-[var(--gold)]">Vilniaus centre</span>
           </h1>
 
           <p className="text-base sm:text-lg text-foreground/75 max-w-xl leading-relaxed mb-8">
@@ -47,7 +47,7 @@ export function Hero() {
           {/* Understated Editorial Proof Bar */}
           <div className="pt-6 border-t border-border flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-muted-foreground">
             <div className="flex items-center gap-1.5">
-              <span className="font-serif text-base font-semibold text-foreground">4,9</span>
+              <span className="text-base font-bold text-foreground">4,9</span>
               <div className="flex text-[var(--gold)]">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} size={11} className="fill-[var(--gold)]" />
@@ -80,7 +80,7 @@ export function Hero() {
               <span className="text-[11px] uppercase tracking-[0.25em] text-[#E0C9A0] font-medium mb-1">
                 Ursana · Naujamiestis
               </span>
-              <p className="font-serif text-lg sm:text-xl text-white/95 leading-snug">
+              <p className="text-lg sm:text-xl font-medium text-white/95 leading-snug">
                 Privati ir jauki aplinka Jūsų odos priežiūros ritualams
               </p>
             </div>

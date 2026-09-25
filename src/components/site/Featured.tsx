@@ -41,7 +41,7 @@ export function Featured() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
             Procedūrų katalogas
           </p>
-          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
+          <h2 className="font-semibold text-3xl sm:text-5xl text-foreground mb-4">
             Klienčių pamėgtos paslaugos
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -72,7 +72,7 @@ export function Featured() {
                 <span className="text-[10px] uppercase tracking-[0.2em] text-[var(--gold)] font-semibold mb-2">
                   {p.tag}
                 </span>
-                <h3 className="font-serif text-xl sm:text-2xl text-foreground mb-3 leading-snug">
+                <h3 className="font-semibold text-xl sm:text-2xl text-foreground mb-3 leading-snug">
                   {p.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-6 flex-1">

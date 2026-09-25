@@ -15,7 +15,7 @@ export function About() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
             Meistrų komanda ir studija
           </p>
-          <h2 className="font-serif text-3xl sm:text-5xl mb-6 text-foreground leading-[1.12]">
+          <h2 className="font-semibold text-3xl sm:text-5xl mb-6 text-foreground leading-[1.12]">
             Asmeninis dėmesys, švara ir profesionali priežiūra
           </h2>
           <p className="text-foreground/80 leading-relaxed mb-5 text-sm sm:text-base">
@@ -30,7 +30,7 @@ export function About() {
           </p>
 
           <div className="p-4 sm:p-5 rounded-lg bg-[#FAF8F5] border border-border/80 mb-8 text-xs sm:text-sm text-foreground/85 leading-relaxed">
-            <div className="font-serif font-semibold text-foreground text-sm sm:text-base mb-1.5 flex items-center gap-2">
+            <div className="font-semibold text-foreground text-sm sm:text-base mb-1.5 flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[var(--gold)]" />
               Registracijos tvarka
             </div>
@@ -46,19 +46,19 @@ export function About() {
 
           <div className="grid grid-cols-3 gap-6 pt-6 border-t border-border">
             <div>
-              <div className="font-serif text-3xl text-foreground font-medium">280+</div>
+              <div className="font-bold text-3xl text-foreground">280+</div>
               <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
                 Laimingų klienčių
               </div>
             </div>
             <div>
-              <div className="font-serif text-3xl text-[var(--gold)] font-medium">4,9★</div>
+              <div className="font-bold text-3xl text-[var(--gold)]">4,9★</div>
               <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
                 Treatwell reitingas
               </div>
             </div>
             <div>
-              <div className="font-serif text-3xl text-foreground font-medium">5</div>
+              <div className="font-bold text-3xl text-foreground">5</div>
               <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
                 Kalbos (LT, EN, RU...)
               </div>
@@ -79,7 +79,7 @@ export function About() {
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#E0C9A0] font-medium block mb-0.5">
                 Privati studijos erdvė Naujamiestyje
               </span>
-              <p className="text-xs text-white/90 font-serif">
+              <p className="text-xs text-white/90 font-medium">
                 Goštauto g. 3-2, Vilnius · Šalia Seimo ir Baltojo tilto
               </p>
             </div>

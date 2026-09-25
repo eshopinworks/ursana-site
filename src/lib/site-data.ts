@@ -104,10 +104,55 @@ export const SERVICES: ServiceCategory[] = [
   },
 ];
 
-export const REVIEWS = [
-  { name: "Daiva", text: "Puikiai išmano savo darbą. Likau labai patenkinta rezultatu." },
-  { name: "Ugnė", text: "Meistrė darbą atliko labai kruopščiai. Tikrai sugrįšiu dar kartą." },
-  { name: "Virginija", text: "Puikiai atlikta procedūra. Ačiū." },
-  { name: "Beata", text: "Viskas puiku." },
-  { name: "Klientas", text: "Rekomenduoju. Puiki specialistė ir labai geras masažas." },
+export type ReviewItem = {
+  name: string;
+  service: string;
+  rating: number;
+  text: string;
+  date?: string;
+};
+
+export const REVIEWS: ReviewItem[] = [
+  {
+    name: "Daiva",
+    service: "Veido procedūra ir odos atgaivinimas",
+    rating: 5,
+    text: "Nuostabi specialistė, puikiai išmano savo darbą ir odos poreikius. Po procedūros veidas tiesiog švyti, o rami atmosfera leido visiškai atsipalaiduoti. Tikrai sugrįšiu dar ne kartą!",
+    date: "Prieš 2 sav.",
+  },
+  {
+    name: "Ugnė",
+    service: "Kobido veido masažas",
+    rating: 5,
+    text: "Meistrė darbą atliko nepaprastai kruopščiai ir švelniai. Kobido masažas buvo kažkas tobulo: visiška ramybė, atpalaiduoti veido raumenys ir matomas stangrinimo efektas iš karto po vizito.",
+    date: "Prieš 1 mėn.",
+  },
+  {
+    name: "Virginija",
+    service: "Lazerinė depiliacija",
+    rating: 5,
+    text: "Labai patiko meistrės profesionalumas, švara ir studijos jaukumas. Procedūra atlikta greitai, kokybiškai ir visiškai be diskomforto. Nuoširdus ačiū už puikią patirtį.",
+    date: "Prieš 3 sav.",
+  },
+  {
+    name: "Beata",
+    service: "Veido estetika ir regeneracija",
+    rating: 5,
+    text: "Lankausi šioje studijoje jau ne pirmą kartą. Kiekvienas vizitas apgalvotas iki smulkmenų: aukšta kokybė, asmeninis dėmesys ir jokio skubėjimo. Rekomenduoju visoms!",
+    date: "Prieš 1 mėn.",
+  },
+  {
+    name: "Rasa",
+    service: "Atkuriamasis veido valymas",
+    rating: 5,
+    text: "Labai profesionali konsultacija ir itin kruopštus atlikimas. Meistrė atsakė į visus klausimus apie odos priežiūrą namuose. Rezultatas pranoko lūkesčius.",
+    date: "Prieš 2 mėn.",
+  },
+  {
+    name: "Kristina",
+    service: "Masažų terapija ir relaksacija",
+    rating: 5,
+    text: "Rekomenduoju 100%! Šilta, privati erdvė pačiame centre, atidumas kiekvienai smulkmenai ir nuostabios meistrės rankos. Išėjau pailsėjusi ir atsigavusi.",
+    date: "Prieš 2 mėn.",
+  },
 ];
