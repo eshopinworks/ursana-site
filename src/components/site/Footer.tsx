@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           <div className="md:col-span-2">
             <div className="flex flex-col mb-4">
-              <span className="font-semibold text-2xl tracking-[0.25em] text-white leading-none">
+              <span className="font-serif text-2xl tracking-[0.25em] text-white leading-none">
                 URSANA
               </span>
               <span className="text-[9px] uppercase tracking-[0.25em] text-[var(--gold)] font-medium mt-1">

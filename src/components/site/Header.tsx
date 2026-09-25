@@ -37,7 +37,7 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between">
         <a href="#top" className="group flex flex-col">
-          <span className="font-semibold text-2xl sm:text-3xl tracking-[0.25em] text-foreground leading-none">
+          <span className="font-serif text-2xl sm:text-3xl tracking-[0.25em] text-foreground leading-none">
             URSANA
           </span>
           <span className="text-[9px] uppercase tracking-[0.25em] text-[var(--gold)] font-medium mt-1">

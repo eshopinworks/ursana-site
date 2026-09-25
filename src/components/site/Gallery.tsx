@@ -29,7 +29,7 @@ export function Gallery() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
             Nuotraukų galerija
           </p>
-          <h2 className="font-semibold text-3xl sm:text-5xl text-foreground mb-4">
+          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
             Studijos erdvė ir procedūros
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -51,7 +51,7 @@ export function Gallery() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                 <span className="text-[11px] uppercase tracking-wider text-[var(--gold)] font-medium">{item.tag}</span>
-                <span className="text-white text-sm font-medium">{item.title}</span>
+                <span className="text-white text-sm font-serif">{item.title}</span>
               </div>
             </button>
           ))}
@@ -91,7 +91,7 @@ export function Gallery() {
               alt={ITEMS[active].title}
               className="max-w-[95vw] max-h-[85vh] object-contain rounded-lg border border-white/20"
             />
-            <p className="text-white/90 text-sm mt-3 font-medium tracking-wide">{ITEMS[active].title}</p>
+            <p className="text-white/80 text-sm mt-3 font-serif tracking-wide">{ITEMS[active].title}</p>
           </div>
         </div>
       )}

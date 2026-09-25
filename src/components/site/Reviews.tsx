@@ -14,7 +14,7 @@ export function Reviews() {
             <span className="w-1.5 h-1.5 bg-[var(--gold)]" />
             Atsiliepimai ir pasitikėjimas
           </p>
-          <h2 className="font-semibold text-3xl sm:text-5xl text-foreground mb-4 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
             Klientų pasitikėjimas, grįstas rezultatais
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -25,7 +25,7 @@ export function Reviews() {
         {/* Social Proof Stats Bar */}
         <div className="mx-auto max-w-4xl mb-12 grid grid-cols-1 sm:grid-cols-3 gap-4 p-5 sm:p-6 bg-white rounded-xl border border-border shadow-[0_10px_30px_-15px_rgba(34,28,26,0.06)]">
           <div className="flex items-center gap-3.5 sm:justify-center sm:border-r sm:border-border/80">
-            <div className="text-3xl font-bold text-foreground">4,9</div>
+            <div className="text-3xl font-serif font-medium text-foreground">4,9</div>
             <div>
               <div className="flex text-[var(--gold)] mb-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -37,7 +37,7 @@ export function Reviews() {
           </div>
 
           <div className="flex items-center gap-3.5 sm:justify-center sm:border-r sm:border-border/80">
-            <div className="text-3xl font-bold text-foreground">289+</div>
+            <div className="text-3xl font-serif font-medium text-foreground">289+</div>
             <div>
               <div className="text-xs font-semibold text-foreground">Patvirtinti atsiliepimai</div>
               <div className="text-xs text-muted-foreground">Oficialioje sistemoje</div>
@@ -45,7 +45,7 @@ export function Reviews() {
           </div>
 
           <div className="flex items-center gap-3.5 sm:justify-center">
-            <div className="text-3xl font-bold text-[var(--gold)]">100%</div>
+            <div className="text-3xl font-serif font-medium text-[var(--gold)]">100%</div>
             <div>
               <div className="text-xs font-semibold text-foreground">Tikri klientų vizitai</div>
               <div className="text-xs text-muted-foreground">Patvirtinta Treatwell</div>
@@ -106,7 +106,7 @@ export function Reviews() {
         {/* Bottom CTA */}
         <div className="mt-14 p-6 sm:p-8 rounded-xl bg-white border border-border flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[0_10px_30px_-15px_rgba(34,28,26,0.06)]">
           <div className="text-center sm:text-left">
-            <h3 className="font-semibold text-base sm:text-lg text-foreground mb-1">
+            <h3 className="font-serif text-lg sm:text-xl text-foreground mb-1">
               Norite pamatyti visus 289 atsiliepimus?
             </h3>
             <p className="text-xs sm:text-sm text-muted-foreground">

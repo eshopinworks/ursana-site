@@ -12,7 +12,7 @@ export function Contact() {
           <p className="text-[11px] tracking-[0.25em] uppercase text-[var(--gold)] font-medium mb-3">
             Lokacija ir kontaktai
           </p>
-          <h2 className="font-semibold text-3xl sm:text-5xl text-foreground mb-4">
+          <h2 className="font-serif text-3xl sm:text-5xl text-foreground mb-4">
             Laukiame Jūsų „Ursana“ studijoje
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -33,7 +33,7 @@ export function Contact() {
                   <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-semibold mb-1">
                     Adresas
                   </div>
-                  <div className="text-base text-foreground font-medium">
+                  <div className="text-base text-foreground font-serif">
                     A. Goštauto g. 3-2, Vilnius, LT-01105
                   </div>
                   <div className="text-xs text-muted-foreground mt-0.5">
